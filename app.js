@@ -44,12 +44,12 @@ const iTetromino=[
 const theTetrominoes=[lTetromino,zTetromino,tTetromino,oTetromino,iTetromino]
 
 let currentPosition=4
-
+let currentRotation=0
 //randomly select a Tetromino and its first ratation
 let random = Math.floor(Math.random()*theTetrominoes.length)
 console.log(random)
 
-let current = theTetrominoes[0][0]
+let current = theTetrominoes[random][currentRotation]
 
 //draw the first rotation in the first tetromino
 function draw(){
